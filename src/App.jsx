@@ -12,7 +12,7 @@ function App() {
   //const apiURL = `http://api.weatherapi.com/v1/current.json?key=f3e767fb24cf4dad82d95407241202&q=${city}&aqi=no`
 
   useEffect(()=>{
-    const apiURL = `http://api.weatherapi.com/v1/current.json?key=f3e767fb24cf4dad82d95407241202&q=${city}&aqi=no`;
+    const apiURL = `https://api.weatherapi.com/v1/current.json?key=f3e767fb24cf4dad82d95407241202&q=${city}&aqi=no`;
 
     fetch(apiURL)
     .then((response)=>{
