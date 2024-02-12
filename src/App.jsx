@@ -4,6 +4,9 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Temperature from './components/Temperature'
 import Highlights from './components/Highlights'
+import x from './assets/icons8-github-100.png'
+import y from './assets/icons8-linkedin-100.png'
+
 
 function App() {
   const [city, setCity] = useState("New Delhi");
@@ -32,6 +35,21 @@ function App() {
 
   return (
     <div className='bg-[#1F213A] w-full h-full text-white flex justify-center align-top'>
+
+  <div className="flex justify-end" >
+        
+        <span className="font-bold my-8" >Weather App by Vikash Sinha</span>
+
+
+     <a href='https://github.com/vikashsinha2603/weather-App' >
+            <img src={x} />
+     </a>
+     <a href='https://www.linkedin.com/in/vikash-sinha-215000259/' >
+            <img src={y} className="h-[100px] w-[100px]" />
+     </a>
+
+  </div>
+
      <div className=" mt-40 w-1/5 h-1/3" >
      {weatherData && (
           <Temperature
